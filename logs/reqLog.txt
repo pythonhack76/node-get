@@ -1,0 +1,13 @@
+20220603	11:16:41	69e1142c-3c8d-432f-83a7-50c3634abf99	GET	undefined	/new-page
+20220603	11:16:41	26086ff6-c295-481e-a11a-cf8ebe59e9f2	GET	undefined	/css/style.css
+20220603	11:16:41	03a05162-b723-4396-8e5e-b007ef088d42	GET	undefined	/img/img1.jpg
+20220603	11:17:20	0c11dae5-dfd2-4eac-bfb9-35f628c08fbd	GET	undefined	/new-page
+20220603	11:17:20	6cc26ef8-e0ff-4141-ac61-5a03ed236b7a	GET	undefined	/img/img1.jpg
+20220603	11:17:20	9304a065-cb1e-4ca8-8964-d317ae15fdd4	GET	undefined	/css/style.css
+20220603	11:22:49	661cc0ba-0ea7-420c-a24c-4a760f09f3ee	GET	undefined	/
+20220603	11:22:49	289fe549-b998-44ed-bfda-b8c9d9feffa6	GET	undefined	/css/style.css
+20220603	11:23:48	4c25a03f-6e5d-4e2d-bf1e-692345c704ca	GET	undefined	/
+20220603	11:23:48	ae0e68cf-82ca-41b6-91be-c2dbcbe4100c	GET	undefined	/css/style.css
+20220603	11:23:57	bc9728da-fb3f-43c4-8d70-22ee924b7f16	GET	undefined	/css/style.css
+20220603	11:23:57	ce201e34-0dd7-4af3-a483-06506f59f98a	GET	undefined	/requestProvider.js.map
+20220603	11:24:41	57d32f4f-6630-43ea-b925-0d1ec5003b7c	GET	undefined	/
