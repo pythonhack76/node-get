@@ -4,6 +4,7 @@ const express = require('express');
 const app = express(); 
 const { logger , timing } = require('./middleware/logEvents');
 const path = require('path');
+const cors = require('cors');
 
 
 const PORT = process.env.PORT || 3501;
@@ -11,6 +12,20 @@ const PORT = process.env.PORT || 3501;
 //custom middleware logger
 app.use(logger); 
 app.use(timing);
+//cross origin resource sharing
+const whiteList = ['https://www.google.it','htto.//127.0.0.1:5500','http://localhost:3501'];
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (whiteList.indexOf(origin) !== -1) {
+            callback(null, true)
+    } else {
+        callback(new Error('non permesso da cors'));
+    }
+},
+optionsSuccessStatus: 200
+}
+
+app.use(cors(corsOptions));
 
 // app.use((req, res, next) => {
 //     logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, 'reqLogNew.txt');
@@ -94,7 +109,12 @@ app.get('/*', (req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
-let bad_words = ['cazzo','minchia','merda','fica','troia'];
+app.use(function (err, req, res, next) {
+    console.error(err.stack)
+    res.status(500).send(err.message);
+})
+
+
 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
